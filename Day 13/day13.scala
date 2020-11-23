@@ -23,6 +23,17 @@ object day13 {
 			// Store happiness value for each name combination
 			happyMap += ((name1, name2) -> happiness)
 		}
+		source.close()
+
+		/**
+		 * Part 2
+		 * Add "myself" to the list of guests
+		  */
+		for (guest <- uqNames) {
+			happyMap += (("Myself", guest) -> 0)
+			happyMap += ((guest, "Myself") -> 0)
+		}
+		uqNames += "Myself"
 
 		// Acquire the unique non-cyclical permutations for all possible seatings
 		var permutations = uqNames.toList.slice(1, uqNames.size).permutations
@@ -31,14 +42,14 @@ object day13 {
 		// Loop through all unique permutations and calculate total happiness value
 		for (perm <- permutations) {
 
-			var seating = List(uqNames.head) ::: perm ::: List(uqNames.head)
+			val seating = List(uqNames.head) ::: perm ::: List(uqNames.head)
 			var value = 0
 
 			for (i <- 1 until seating.length)
 				value += happyMap((seating(i-1), seating(i))) + happyMap((seating(i), seating(i-1)))
 
 			// Store the seating and it's value
-			seatingHappiness += (seating -> value)
+			seatingHappiness += (seating.slice(0, seating.length-1) -> value)
 		}
 
 		// Retrieve the maximum value
