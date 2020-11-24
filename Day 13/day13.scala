@@ -45,6 +45,7 @@ object day13 {
 		var permutations = uqNames.toList.slice(1, uqNames.size).permutations
 		var seatingHappiness = Map[List[String], Int]()
 
+
 		// Loop through all unique permutations and calculate total happiness value
 		for (perm <- permutations) {
 
@@ -64,7 +65,7 @@ object day13 {
 		/**
 		 * Because there is a cycle the possible permutations are reduced by a factor of (n-1)
 		 * 8 guests gives 8! = 40 320 permutations, one eighth of those are duplicated through cycles
-		 * The actual nuumber of unique permutations is (8-1)! = 5040
+		 * The actual number of unique permutations is (8-1)! = 5040
 		 * The first seating can remain the same and then the rest of
 		 * the seats are just permutations of the remaining guests, e.g.
 		 * 

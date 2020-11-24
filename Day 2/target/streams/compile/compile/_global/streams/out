@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mD:\dev\Scala projects\AoC-2015\Day 2\day2.scala:23:4: not found: value paperIfCombinationsWasDumber[0m
+[0m[[0m[31merror[0m] [0m[0m			paperIfCombinationsWasDumber += 2 * areas.sum + areas.min		[0m
+[0m[[0m[31merror[0m] [0m[0m			^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

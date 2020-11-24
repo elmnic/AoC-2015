@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mD:\dev\Scala projects\AoC-2015\Day 1\day1.scala:18:21: value unary_! is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m			if (floor < 0 && !basementIndex == 0)[0m
+[0m[[0m[31merror[0m] [0m[0m			                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
