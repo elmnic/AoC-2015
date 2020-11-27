@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mD:\dev\Scala projects\AoC-2015\Day 3\day3.scala:27:21: not found: value point[0m
+[0m[[0m[31merror[0m] [0m[0m			deliveryMap += ((point.x, point.y) -> 1)[0m
+[0m[[0m[31merror[0m] [0m[0m			                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\dev\Scala projects\AoC-2015\Day 3\day3.scala:27:30: not found: value point[0m
+[0m[[0m[31merror[0m] [0m[0m			deliveryMap += ((point.x, point.y) -> 1)[0m
+[0m[[0m[31merror[0m] [0m[0m			                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

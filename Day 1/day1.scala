@@ -1,3 +1,8 @@
+/**
+  * Advent of Code 2015 Day 1
+  * Link: https://adventofcode.com/2015/day/1
+  */
+
 import scala.io.Source
 
 object day1 {
@@ -7,7 +12,7 @@ object day1 {
 		/**
 		  * Part 1 simple solution
 		  */
-		// println(source.mkString.map(c => if (c == '(') 1 else -1).sum)
+		println(source.mkString.map(c => if (c == '(') 1 else -1).sum)
 
 		/**
 		  * Part 2 solution required the knowledge of indices

@@ -1,7 +1,6 @@
 /**
   * Advent of Code 2015 Day 13
   * Link: https://adventofcode.com/2015/day/13
-  * 
   */
 
 import scala.io.Source
